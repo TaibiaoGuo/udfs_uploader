@@ -1,6 +1,6 @@
 import {Table, Grid, Button, Form} from 'react-bootstrap';
 import React, {Component} from 'react';
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import web3 from './web3';
 import udfs from './udfs';
@@ -121,7 +121,7 @@ class App extends Component {
 
                         <tbody>
                         <tr>
-                            <td>UDFS Hash # 存储在Ulord</td>
+                            <td>UDFS Hash( 存储在Ulord)</td>
                             <td>{this.state.udfsHash}</td>
                         </tr>
                         <tr>
@@ -130,12 +130,12 @@ class App extends Component {
                         </tr>
 
                         <tr>
-                            <td>交易Hash #</td>
+                            <td>交易Hash</td>
                             <td>{this.state.transactionHash}</td>
                         </tr>
 
                         <tr>
-                            <td>区块高度 #</td>
+                            <td>区块高度 </td>
                             <td>{this.state.blockNumber}</td>
                         </tr>
 
