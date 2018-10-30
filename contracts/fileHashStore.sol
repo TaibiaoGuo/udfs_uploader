@@ -1,7 +1,7 @@
 //本示例使用remix和MetaMask进行开发
 
 contract fileHashStore {
- string ipfsHash;
+ string udfsHash;
 
     //将文件哈希存储到链上，需要利用MetaMask进行签名
 
@@ -10,11 +10,11 @@ contract fileHashStore {
 
     ///本交易将使一个将文件哈希存储到链上的智能合约上链
  function sendHash(string fileHash) public {
-   ipfsHash = fileHash;
+   udfsHash = fileHash;
  }
 
     //在区块链上查询文件
  function getHash() public view returns (string fileHash) {
-   return ipfsHash;
+   return udfsHash;
  }
 }
